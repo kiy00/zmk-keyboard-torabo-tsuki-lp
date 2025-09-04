@@ -51,7 +51,7 @@
         layer_3 {
             bindings = <
 &trans  &trans   &trans   &trans        &trans        &trans                                 &trans         &trans     &trans        &trans     &trans   &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                                 &kp LG(X)      &kp LG(C)  &kp LG(V)     &none      &none    &trans
+&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                                 &none          &kp LG(X)  &kp LG(C)     &kp LG(V)  &none    &trans
 &trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans             &none          &mkp LCLK  &kp UP_ARROW  &mkp RCLK  &none    &trans
 &trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &kp RIGHT_CONTROL  &kp HOME       &kp LEFT   &kp DOWN      &kp RIGHT  &kp END  &trans
 &trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &kp LG(Z)          &kp LS(LG(Z))  &trans     &trans        &trans     &trans   &trans
