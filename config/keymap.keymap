@@ -69,11 +69,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans               &trans               &trans           &trans                                  &trans   &trans            &trans             &trans                &trans                 &trans
-&trans  &kp PLUS   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp KP_NUMBER_9  &kp EXCLAMATION                         &none    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &trans
-&trans  &kp MINUS  &kp KP_NUMBER_4      &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp QUESTION     &trans  &trans         &none    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp ASTRK  &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp TILDE        &to 1   &trans         &none    &none             &kp CARET          &kp UNDER             &kp BACKSLASH          &trans
-&trans  &kp SLASH  &kp EQUAL            &kp KP_NUMBER_0      &none            &none            &none   &kp BACKSPACE  &kp RET  &none             &trans             &trans                &trans                 &trans
+&trans  &trans     &trans               &trans               &trans           &trans                                  &trans            &trans             &trans                &trans                 &trans         &trans
+&trans  &kp PLUS   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp KP_NUMBER_9  &kp EXCLAMATION                         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp SEMICOLON  &trans
+&trans  &kp MINUS  &kp KP_NUMBER_4      &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp QUESTION     &trans  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
+&trans  &kp ASTRK  &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp TILDE        &to 1   &trans         &none             &none              &kp CARET             &kp UNDER              &kp BACKSLASH  &trans
+&trans  &kp SLASH  &kp EQUAL            &kp KP_NUMBER_0      &none            &none            &none   &kp BACKSPACE  &kp RET           &none              &trans                &trans                 &trans         &trans
             >;
         };
 
