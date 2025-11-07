@@ -42,6 +42,27 @@
             bindings = <&kp Q &kp W &kp E &kp R &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp EXCL &kp EXCL>;
             label = "MYP";
         };
+
+        SquareBrackets: SquareBrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "SQUAREBRACKETS";
+        };
+
+        CurlBrackets: CurlBrackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "CURLBRACKETS";
+        };
+
+        Parenthesis: Brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+            label = "BRACKETS";
+        };
     };
 
     keymap {
@@ -69,11 +90,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans               &trans               &trans           &trans                                    &trans             &trans             &trans                &trans                 &trans         &trans
-&trans  &kp PLUS   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp KP_NUMBER_9  &kp EXCLAMATION                           &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp SEMICOLON  &trans
-&trans  &kp MINUS  &kp KP_NUMBER_4      &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp QUESTION     &trans  &trans           &kp LEFT_BRACE     &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
-&trans  &kp ASTRK  &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp TILDE        &to 1   &kp RIGHT_SHIFT  &kp DOUBLE_QUOTES  &kp APOS           &kp CARET             &kp UNDER              &kp BACKSLASH  &trans
-&trans  &kp SLASH  &kp EQUAL            &kp KP_NUMBER_0      &none            &none            &none   &kp BACKSPACE    &kp RET            &none              &trans                &trans                 &trans         &trans
+&trans  &trans     &trans               &trans               &trans           &trans                                    &trans             &trans           &trans                &trans                 &trans         &trans
+&trans  &kp PLUS   &kp LS(KP_NUMBER_7)  &kp LS(KP_NUMBER_8)  &kp KP_NUMBER_9  &kp EXCLAMATION                           &none              &SquareBrackets  &CurlBrackets         &Parenthesis           &kp SEMICOLON  &trans
+&trans  &kp MINUS  &kp KP_NUMBER_4      &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp QUESTION     &trans  &trans           &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
+&trans  &kp ASTRK  &kp KP_NUMBER_1      &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp TILDE        &to 1   &kp RIGHT_SHIFT  &kp DOUBLE_QUOTES  &kp APOS         &kp CARET             &kp UNDER              &kp BACKSLASH  &trans
+&trans  &kp SLASH  &kp EQUAL            &kp KP_NUMBER_0      &none            &none            &none   &kp BACKSPACE    &kp RET            &none            &trans                &trans                 &trans         &trans
             >;
         };
 
