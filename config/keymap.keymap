@@ -18,7 +18,7 @@
         ps: ps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Y) &kp U &kp M &kp E &kp M &kp I &kp N6 &kp N1 &kp N1 &kp N9 &kp LS(S) &kp H &kp U &kp N>;
+            bindings = <&kp LS(Y) &kp U &kp M &kp E &kp M &kp I &kp N6 &kp N1 &kp N1 &kp N9>;
             label = "PS";
         };
 
